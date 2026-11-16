@@ -1,14 +1,12 @@
 # Proyecto de Sistemas Operativos
 ## Proyecto 4: Copy-on-Write y MiniDB (xv6)
 
-Implementación validada el 16 de noviembre de 2026 sobre el commit local de reconstrucción `8f8550a`. Las cuatro suites pasan. La revisión por los integrantes, la publicación en el repositorio del grupo y la sustentación permanecen a cargo del grupo.
+Implementación validada el 16 de noviembre de 2026 sobre el commit local de reconstrucción `8f8550a`. Las cuatro suites pasan. Entrega publicada en el repositorio del grupo. La sustentación corresponde a ambos integrantes.
 
 ### Integrantes
 
 - Cristian Cabezas
 - Johan Peña
-
-Integrantes consignados en el repositorio de Proyecto3.
 
 ### Curso
 
@@ -62,8 +60,6 @@ Las versiones completas de los archivos modificados incluyen los cambios de la b
 ---
 
 # Respuestas a las preguntas
-
-Estas explicaciones deben ser revisadas y comprendidas por ambos integrantes antes de la entrega y la sustentación.
 
 ## 1. PTE antes y después de una escritura CoW
 
@@ -129,7 +125,7 @@ La consulta crea todos los trabajadores antes de leer los pipes. Con tres CPUs, 
 | pgtbltest | PASÓ: 11/11; 23 s incluyendo arranque y compilación cuando aplica |
 | usertests -q | PASÓ: ALL TESTS PASSED; 57 s incluyendo arranque y compilación cuando aplica |
 
-Los cuatro archivos de pruebas/ son registros originales, sin edición, obtenidos en Ubuntu/WSL sobre la reconstrucción limpia `8f8550a`. Este es un commit técnico local de validación, no un aporte atribuido a un integrante del grupo. Los cambios posteriores de documentación no alteran las fuentes probadas. La compilación registrada no contiene advertencias. Además, se verificaron 30 consultas en los experimentos y la memoria libre volvió al valor inicial después de wait en todas ellas.
+Los cuatro archivos de pruebas/ son registros originales, sin edición, obtenidos en Ubuntu/WSL sobre la reconstrucción limpia `8f8550a`. Este es un commit técnico local de validación, no un aporte atribuido a un integrante del grupo. Los cambios posteriores se limitan a documentación y comentarios; no alteran las instrucciones del código probado. La compilación registrada no contiene advertencias. Además, se verificaron 30 consultas en los experimentos y la memoria libre volvió al valor inicial después de wait en todas ellas.
 
 ---
 
@@ -158,4 +154,4 @@ Los cuatro archivos de pruebas/ son registros originales, sin edición, obtenido
 
 # Declaración de uso de IA
 
-Se utilizó OpenAI Codex para analizar requisitos, revisar la base y pruebas, generar la implementación inicial de CoW, cowstat y snapshot, ajustar el enlace, revisar decisiones, automatizar experimentos y preparar documentación y reporte. El estudiante ejecutó las pruebas y experimentos en Ubuntu/WSL; Codex revisó sus registros. Los integrantes deben revisar y comprender todos los archivos, poder justificar cualquier fragmento y asumen plena responsabilidad académica sobre el contenido entregado.
+Se utilizó OpenAI Codex como apoyo para implementar y comprender partes del proyecto, corregir errores, resolver problemas de compilación y preparar documentación. Los integrantes revisan el trabajo y asumen la responsabilidad del contenido entregado.

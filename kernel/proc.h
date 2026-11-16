@@ -94,8 +94,8 @@ struct proc {
 
   // these are private to the process, so p->lock need not be held.
   uint64 kstack;               // Virtual address of kernel stack
-  uint64 cowfaults;            // successful CoW resolutions, including copyout
-  uint64 cowcopies;            // resolutions requiring a physical copy
+  uint64 cowfaults;            // Resoluciones CoW, incluidas las de copyout.
+  uint64 cowcopies;            // Resoluciones que requieren una copia física.
   uint64 sz;                   // Size of process memory (bytes)
   pagetable_t pagetable;       // User page table
   struct trapframe *trapframe; // data page for trampoline.S

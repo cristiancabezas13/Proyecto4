@@ -149,7 +149,7 @@ sys_uptime(void)
   return xticks;
 }
 
-// Snapshot the counters before copyout (which may itself resolve CoW).
+// Lee los contadores antes de copyout, que también puede resolver CoW.
 uint64
 sys_cowstat(void)
 {

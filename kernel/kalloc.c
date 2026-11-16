@@ -58,7 +58,7 @@ krefcount(uint64 pa)
   return n;
 }
 
-// All paths nesting these locks take kmem before refs.
+// Al usar ambos locks, se toma kmem antes que refs.
 void
 kmemstat(uint64 *freepages, uint64 *sharedpages)
 {
@@ -88,7 +88,7 @@ freerange(void *pa_start, void *pa_end)
   char *p;
   p = (char *)PGROUNDUP((uint64)pa_start);
   for (; p + PGSIZE <= (char *)pa_end; p += PGSIZE) {
-    // Boot is single-threaded: seed ownership before the first kfree.
+    // Inicializa una referencia antes de liberar la página durante el arranque.
     refs.count[pageindex((uint64)p)] = 1;
     kfree(p);
   }
@@ -118,7 +118,7 @@ kfree(void *pa)
     return;
   }
 
-  // Fill with junk only after the last owner releases the page.
+  // Rellena la página solo cuando ya no tiene referencias.
   memset(pa, 1, PGSIZE);
 
   r = (struct run *)pa;

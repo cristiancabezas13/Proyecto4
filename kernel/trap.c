@@ -70,7 +70,7 @@ usertrap(void)
     // ok
   } else if (r_scause() == 15 &&
              cowfault(p->pagetable, r_stval()) == 0) {
-    // Retry the faulting store with a private writable mapping.
+    // Reintenta la escritura con el mapeo privado y escribible.
   } else if ((r_scause() == 15 || r_scause() == 13) &&
              vmfault(p->pagetable, p->sz, r_stval(),
                      (r_scause() == 13) ? 1 : 0) != 0) {

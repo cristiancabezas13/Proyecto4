@@ -1,11 +1,11 @@
 OUTPUT_ARCH( "riscv" )
 ENTRY( _entry )
 
-/* Keep executable code and writable data in distinct ELF segments. */
+/* Separa el código ejecutable de los datos escribibles. */
 PHDRS
 {
-  text PT_LOAD FLAGS(5); /* read + execute */
-  data PT_LOAD FLAGS(6); /* read + write */
+  text PT_LOAD FLAGS(5); /* Lectura y ejecución. */
+  data PT_LOAD FLAGS(6); /* Lectura y escritura. */
 }
 
 SECTIONS

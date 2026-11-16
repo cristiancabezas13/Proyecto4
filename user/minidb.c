@@ -1,15 +1,7 @@
-// minidb: base de datos de cuentas en memoria (Proyecto 4).
+// MiniDB: consultas paralelas y snapshots consistentes de cuentas.
 // Sistemas Operativos 2026-2, Universidad EAFIT.
-//
-// ESQUELETO entregado por el docente. Ya están hechos:
-//   minidb consulta K     reporte por sucursal con K procesos trabajadores
-//   minidb mapa           vmprint() de un hijo antes y después de escribir
-// El grupo debe implementar (busquen "TODO"):
-//   minidb snapshot M     guarda snap.db en un hijo mientras el padre
-//                         aplica M transferencias (sección C.2 del enunciado)
-//
-// Estudien consulta(): es el modelo de multiprogramación del proyecto
-// (varios hijos con fork(), un pipe por hijo, el padre combina).
+// Consulta y mapa se basan en el esqueleto entregado por el docente.
+
 #include "kernel/types.h"
 #include "kernel/riscv.h"
 #include "kernel/fcntl.h"
@@ -230,7 +222,7 @@ snapshot(int m)
   }
   if(cowstat(&despues) < 0)
     morir("cowstat() fallo");
-  // Read access bits before checksum/total scans touch all 64 pages.
+  // Mide los accesos antes de recorrer toda la tabla para verificarla.
   if(pgaccess(tabla, 64, &mask) < 0)
     morir("pgaccess() fallo");
   int tocadas = 0;

@@ -314,7 +314,7 @@ uvmfree(pagetable_t pagetable, uint64 sz)
   freewalk(pagetable);
 }
 
-// Share present pages; absent lazy pages remain absent in the child.
+// Comparte las páginas presentes y conserva los huecos de asignación perezosa.
 int
 uvmcopy(pagetable_t old, pagetable_t new, uint64 sz)
 {
@@ -325,7 +325,7 @@ uvmcopy(pagetable_t old, pagetable_t new, uint64 sz)
       continue;
     uint64 pa = PTE2PA(*pte);
     uint flags = PTE_FLAGS(*pte);
-    // The guard has W but lacks U. Never make it a CoW user page.
+    // La guarda no tiene permiso U y no debe marcarse como CoW.
     if ((flags & (PTE_W | PTE_U)) == (PTE_W | PTE_U))
       flags = (flags & ~PTE_W) | PTE_COW;
     if (mappages(new, i, PGSIZE, pa, flags) < 0)
@@ -337,13 +337,13 @@ uvmcopy(pagetable_t old, pagetable_t new, uint64 sz)
   return 0;
 err:
   uvmunmap(new, 0, i / PGSIZE, 1);
-  // Parent entries may remain CoW; the single-owner path handles them.
+  // Las entradas del padre pueden seguir como CoW con una sola referencia.
   sfence_vma();
   return -1;
 }
 
-// The caller owns this pagetable; xv6 has no concurrent user threads.
-// Keeping our reference pins the old page while other owners exit/copy.
+// La referencia del proceso mantiene viva la página durante la copia.
+// En xv6 no hay hilos de usuario concurrentes sobre esta tabla.
 int
 cowfault(pagetable_t pagetable, uint64 va)
 {
