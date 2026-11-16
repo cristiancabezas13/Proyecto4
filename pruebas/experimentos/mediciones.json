@@ -1,0 +1,275 @@
+{
+  "commit": "8f8550a5ac6edf33c35f9f73c397d702848de3d9",
+  "mediciones": [
+    {
+      "cpus": 1,
+      "trabajadores": 1,
+      "repeticion": 1,
+      "ticks": 25,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32424,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 2,
+      "repeticion": 1,
+      "ticks": 23,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32415,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 3,
+      "repeticion": 1,
+      "ticks": 23,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32406,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 4,
+      "repeticion": 1,
+      "ticks": 23,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32397,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 8,
+      "repeticion": 1,
+      "ticks": 24,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32361,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 1,
+      "repeticion": 2,
+      "ticks": 23,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32424,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 2,
+      "repeticion": 2,
+      "ticks": 25,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32415,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 3,
+      "repeticion": 2,
+      "ticks": 24,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32406,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 4,
+      "repeticion": 2,
+      "ticks": 24,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32397,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 8,
+      "repeticion": 2,
+      "ticks": 24,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32361,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 1,
+      "repeticion": 3,
+      "ticks": 23,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32424,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 2,
+      "repeticion": 3,
+      "ticks": 24,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32415,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 3,
+      "repeticion": 3,
+      "ticks": 23,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32406,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 4,
+      "repeticion": 3,
+      "ticks": 26,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32397,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 1,
+      "trabajadores": 8,
+      "repeticion": 3,
+      "ticks": 24,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32361,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 1,
+      "repeticion": 1,
+      "ticks": 24,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32424,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 2,
+      "repeticion": 1,
+      "ticks": 14,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32415,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 3,
+      "repeticion": 1,
+      "ticks": 11,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32406,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 4,
+      "repeticion": 1,
+      "ticks": 10,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32397,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 8,
+      "repeticion": 1,
+      "ticks": 12,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32361,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 1,
+      "repeticion": 2,
+      "ticks": 28,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32424,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 2,
+      "repeticion": 2,
+      "ticks": 13,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32415,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 3,
+      "repeticion": 2,
+      "ticks": 9,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32406,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 4,
+      "repeticion": 2,
+      "ticks": 9,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32397,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 8,
+      "repeticion": 2,
+      "ticks": 11,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32361,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 1,
+      "repeticion": 3,
+      "ticks": 24,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32424,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 2,
+      "repeticion": 3,
+      "ticks": 13,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32415,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 3,
+      "repeticion": 3,
+      "ticks": 11,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32406,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 4,
+      "repeticion": 3,
+      "ticks": 11,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32397,
+      "libres_despues_wait": 32433
+    },
+    {
+      "cpus": 3,
+      "trabajadores": 8,
+      "repeticion": 3,
+      "ticks": 13,
+      "libres_antes": 32433,
+      "libres_con_trabajadores": 32361,
+      "libres_despues_wait": 32433
+    }
+  ]
+}

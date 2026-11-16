@@ -1,0 +1,292 @@
+Experimentos Proyecto4
+Fecha: 2026-11-16 15:23:55
+Commit: 8f8550a5ac6edf33c35f9f73c397d702848de3d9
+CPUS: 3
+Fin: terminó
+qemu-system-riscv64 -machine virt -bios none -kernel kernel/kernel -m 128M -smp 3 -nographic -global virtio-mmio.force-legacy=false -drive file=fs.img,if=none,format=raw,id=x0 -device virtio-blk-device,drive=x0,bus=virtio-mmio-bus.0
+
+xv6 kernel is booting
+
+hart 2 starting
+hart 1 starting
+init: starting sh
+$ minidb consulta 1
+consulta: trabajadores=1
+trabajador pid=4 cuentas=[0,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32424
+consulta: ticks=24
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 2
+consulta: trabajadores=2
+trabajador pid=6 cuentas=[0,4096)
+trabajador pid=7 cuentas=[4096,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32415
+consulta: ticks=14
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 3
+consulta: trabajadores=3
+trabajador pid=9 cuentas=[0,2730)
+trabajador pid=10 cuentas=[2730,5461)
+trabajador pid=11 cuentas=[5461,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32406
+consulta: ticks=11
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 4
+consulta: trabajadores=4
+trabajador pid=13 cuentas=[0,2048)
+trabajador pid=14 cuentas=[2048,4096)
+trabajador pid=15 cuentas=[4096,6144)
+trabajador pid=16 cuentas=[6144,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32397
+consulta: ticks=10
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 8
+consulta: trabajadores=8
+trabajador pid=18 cuentas=[0,1024)
+trabajador pid=19 cuentas=[1024,2048)
+trabajador pid=20 cuentas=[2048,3072)
+trabajador pid=21 cuentas=[3072,4096)
+trabajador pid=22 cuentas=[4096,5120)
+trabajador pid=23 cuentas=[5120,6144)
+trabajador pid=24 cuentas=[6144,7168)
+trabajador pid=25 cuentas=[7168,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32361
+consulta: ticks=12
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 1
+consulta: trabajadores=1
+trabajador pid=27 cuentas=[0,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32424
+consulta: ticks=28
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 2
+consulta: trabajadores=2
+trabajador pid=29 cuentas=[0,4096)
+trabajador pid=30 cuentas=[4096,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32415
+consulta: ticks=13
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 3
+consulta: trabajadores=3
+trabajador pid=32 cuentas=[0,2730)
+trabajador pid=33 cuentas=[2730,5461)
+trabajador pid=34 cuentas=[5461,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32406
+consulta: ticks=9
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 4
+consulta: trabajadores=4
+trabajador pid=36 cuentas=[0,2048)
+trabajador pid=37 cuentas=[2048,4096)
+trabajador pid=38 cuentas=[4096,6144)
+trabajador pid=39 cuentas=[6144,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32397
+consulta: ticks=9
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 8
+consulta: trabajadores=8
+trabajador pid=41 cuentas=[0,1024)
+trabajador pid=42 cuentas=[1024,2048)
+trabajador pid=43 cuentas=[2048,3072)
+trabajador pid=44 cuentas=[3072,4096)
+trabajador pid=45 cuentas=[4096,5120)
+trabajador pid=46 cuentas=[5120,6144)
+trabajador pid=47 cuentas=[6144,7168)
+trabajador pid=48 cuentas=[7168,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32361
+consulta: ticks=11
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 1
+consulta: trabajadores=1
+trabajador pid=50 cuentas=[0,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32424
+consulta: ticks=24
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 2
+consulta: trabajadores=2
+trabajador pid=52 cuentas=[0,4096)
+trabajador pid=53 cuentas=[4096,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32415
+consulta: ticks=13
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 3
+consulta: trabajadores=3
+trabajador pid=55 cuentas=[0,2730)
+trabajador pid=56 cuentas=[2730,5461)
+trabajador pid=57 cuentas=[5461,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32406
+consulta: ticks=11
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 4
+consulta: trabajadores=4
+trabajador pid=59 cuentas=[0,2048)
+trabajador pid=60 cuentas=[2048,4096)
+trabajador pid=61 cuentas=[4096,6144)
+trabajador pid=62 cuentas=[6144,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32397
+consulta: ticks=11
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ minidb consulta 8
+consulta: trabajadores=8
+trabajador pid=64 cuentas=[0,1024)
+trabajador pid=65 cuentas=[1024,2048)
+trabajador pid=66 cuentas=[2048,3072)
+trabajador pid=67 cuentas=[3072,4096)
+trabajador pid=68 cuentas=[4096,5120)
+trabajador pid=69 cuentas=[5120,6144)
+trabajador pid=70 cuentas=[6144,7168)
+trabajador pid=71 cuentas=[7168,8192)
+sucursal 0: cuentas=1024 total=25610224 max=50055
+sucursal 1: cuentas=1024 total=25750064 max=50068
+sucursal 2: cuentas=1024 total=25677072 max=50050
+sucursal 3: cuentas=1024 total=25624464 max=50071
+sucursal 4: cuentas=1024 total=25671856 max=50084
+sucursal 5: cuentas=1024 total=25685600 max=50097
+sucursal 6: cuentas=1024 total=25582992 max=50021
+sucursal 7: cuentas=1024 total=25680128 max=50051
+consulta: firma=0x2DD2F610
+consulta: paginas_libres antes=32433 con_trabajadores=32361
+consulta: ticks=13
+consulta: paginas_libres despues_wait=32433
+consulta: OK
+$ 

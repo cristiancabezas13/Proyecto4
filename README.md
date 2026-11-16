@@ -159,4 +159,3 @@ Los cuatro archivos de pruebas/ son registros originales, sin edición, obtenido
 # Declaración de uso de IA
 
 Se utilizó OpenAI Codex para analizar requisitos, revisar la base y pruebas, generar la implementación inicial de CoW, cowstat y snapshot, ajustar el enlace, revisar decisiones, automatizar experimentos y preparar documentación y reporte. El estudiante ejecutó las pruebas y experimentos en Ubuntu/WSL; Codex revisó sus registros. Los integrantes deben revisar y comprender todos los archivos, poder justificar cualquier fragmento y asumen plena responsabilidad académica sobre el contenido entregado.
-
