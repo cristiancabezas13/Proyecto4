@@ -1,7 +1,7 @@
 # Proyecto de Sistemas Operativos
 ## Proyecto 4: Copy-on-Write y MiniDB (xv6)
 
-Implementación validada el 16 de noviembre de 2026 sobre el commit local de reconstrucción `8f8550a`. Las cuatro suites pasan. Entrega publicada en el repositorio del grupo. La sustentación corresponde a ambos integrantes.
+Implementación validada el 16 de noviembre de 2026 sobre el commit local de reconstrucción `8f8550a`. Las cuatro suites pasan. 
 
 ### Integrantes
 
