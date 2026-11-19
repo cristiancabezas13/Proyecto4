@@ -154,4 +154,4 @@ Los cuatro archivos de pruebas/ son registros originales, sin edición, obtenido
 
 # Declaración de uso de IA
 
-Se utilizó OpenAI Codex como apoyo para implementar y comprender partes del proyecto, corregir errores, resolver problemas de compilación y preparar documentación. Los integrantes revisan el trabajo y asumen la responsabilidad del contenido entregado.
+Se utilizó Chatgpt como apoyo para implementar y comprender partes del proyecto, corregir errores y resolver problemas de compilación. Los integrantes revisan el trabajo y asumen la responsabilidad del contenido entregado.
